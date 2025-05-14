@@ -14,7 +14,7 @@ test('stress test with 1 concurrent request for 5 seconds', function () {
         ->toBe(0);
  
     expect($requests->duration->med)
-        ->toBeLessThan(20); // 5ms
+        ->toBeLessThan(20);
 });
 
 test('stress test with 5 concurrent requests for 10 seconds', function () {
@@ -29,7 +29,7 @@ test('stress test with 5 concurrent requests for 10 seconds', function () {
         ->toBe(0);
  
     expect($requests->duration->med)
-        ->toBeLessThan(20); // 5ms
+        ->toBeLessThan(20);
 });
 
 test('stress test with 10 concurrent requests for 15 seconds', function () {
@@ -44,5 +44,5 @@ test('stress test with 10 concurrent requests for 15 seconds', function () {
         ->toBe(0);
 
     expect($requests->duration->med)
-        ->toBeLessThan(20); // 5ms
+        ->toBeLessThan(20);
 });
