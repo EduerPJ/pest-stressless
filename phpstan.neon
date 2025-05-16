@@ -1,0 +1,19 @@
+parameters:
+  level: 5
+
+  paths:
+    - app
+    - config
+    - database
+    - routes
+  excludePaths:
+    - vendor
+    - storage
+    - bootstrap/cache
+  ignoreErrors:
+    - '#Undefined variable: \$this#'
+  earlyTerminatingMethodCalls:
+    App\Http\Controllers\Controller:
+      - abort
+      - redirect
+  treatPhpDocTypesAsCertain: false
